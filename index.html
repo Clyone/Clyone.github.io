@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah</title>
+    <style>
+        @font-face {
+            font-family: 'KOMTIT';
+            src: url('IMPACT__.ttf') format('truetype'); /* Pastikan path sesuai dengan lokasi file font */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'KOMTIT', sans-serif;
+            color: #000;
+            text-align: center;
+            overflow-y: auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            flex-grow: 1;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url('Benteeng.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .header h1 {
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+
+        .images-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        .image-with-text {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            margin: 10px 0;
+        }
+
+        .title {
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 1;
+            width: 60%;
+        }
+
+        .circle-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #fff;
+            background-color: #808080;
+        }
+
+        .circle-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-text {
+            flex: 1;
+            background: #d3d3d3;
+            padding: 15px;
+            border-radius: 5px; 
+            box-sizing: border-box;
+            overflow-y: auto;
+            max-height: 150px; /* Batasi tinggi agar tidak terlalu tinggi */
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            color: #ffffff;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .footer .names {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 10px;
+            flex-wrap: wrap; /* Agar nama tidak meluber */
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .title {
+                font-size: 16px;
+            }
+
+            .image-text {
+                max-height: 120px; /* Sesuaikan untuk tampilan kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggleTranslation()">Toggle Translation</button>
+    <div class="container">
+        <div class="header">
+            <h1 id="header-text">Selamat datang di sejarah benteng orange</h1>
+        </div>
+
+        <div class="images-container">
+            <div class="image-with-text">
+                <div class="title" id="title1">AWAL MULA SEJARAH</div>
+                <div class="circle-image">
+                    <img src="Gambar1BentengOrange.jpg" alt="Gambar 1">
+                </div>
+                <div class="image-text" id="text1">
+                    <p>Benteng Oranje didirikan pada tanggal 26 Mei 1607 oleh Cornelis Matclief de Jonge di Ternate, Maluku Utara. Pembangunan benteng ini bertujuan untuk melindungi Kesultanan Ternate dari ancaman Spanyol setelah Sultan Said ditangkap dan diasingkan ke Manila pada tahun 1606. Sebelumnya, lokasi ini merupakan bekas benteng Portugis yang dikenal sebagai Benteng Malayo. Nama "Oranje" diberikan pada tahun 1609 oleh Francois Wiltlentt, yang menandai peralihan kontrol kepada Belanda.</p>
+                </div>
+            </div>
+
+            <div class="image-with-text">
+                <div class="title" id="title2">PERKEMBANGAN SEIRING WAKTU</div>
+                <div class="circle-image">
+                    <img src="Gambar2BentengOrange.jpg" alt="Gambar 2">
+                </div>
+                <div class="image-text" id="text2">
+                    <p>Seiring berjalannya waktu, Benteng Oranje mengalami beberapa renovasi dan penguatan. Pada abad ke-18, setelah kedatangan Belanda yang menggeser posisi Portugis, benteng ini diperkuat dengan semen dan tambahan bangunan kecil untuk meriam. Benteng ini juga berfungsi sebagai pusat pemantauan dan pertahanan terhadap bajak laut yang mengancam jalur perdagangan rempah-rempah di perairan Sulawesi.</p>
+                </div>
+            </div>
+
+            <div class="image-with-text">
+                <div class="title" id="title3">PUNCAK SEJARAH YANG MENCAPAI KEJAYAAN</div>
+                <div class="circle-image">
+                    <img src="Gambar3BentengOrange.jpg" alt="Gambar 3">
+                </div>
+                <div class="image-text" id="text3">
+                    <p>Benteng Oranje mencapai puncak kejayaannya sebagai salah satu benteng pertahanan utama Belanda di kawasan Maluku. Dalam periode ini, benteng ini mampu menampung hingga 130 serdadu dan menjadi simbol kekuatan kolonial Belanda. Dengan posisi strategisnya, benteng ini tidak hanya berfungsi sebagai pertahanan tetapi juga sebagai pusat administrasi bagi Belanda di wilayah tersebut.</p>
+                    <p>Hingga kini, Benteng Oranje tetap berdiri kokoh sebagai saksi bisu dari sejarah kolonial Indonesia. Sebagai salah satu peninggalan penting dari masa lalu, benteng ini terus menarik perhatian baik dari kalangan akademisi maupun wisatawan yang ingin memahami lebih dalam tentang sejarah kolonial di Indonesia.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Dibuat Oleh:</p>
+            <div class="names">
+                <p>Muhammad Salwan Wahab</p>
+                <p>Nabil Tamim Abdullah</p>
+                <p>Rizal Jabarudin</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleTranslation() {
+            const translations = {
+                header: {
+                    id: "header-text",
+                    en: "Welcome to the history of Fort Orange",
+                    idn: "Selamat datang di sejarah benteng orange"
+                },
+                titles: [
+                    { id: "title1", en: "THE BEGINNING OF HISTORY", idn: "PUNCAK SEJARAH YANG MENCAPAI KEJAYAAN" },
+                    { id: "title2", en: "DEVELOPMENT OVER TIME", idn: "PERKEMBANGAN SEIRING WAKTU" },
+                    { id: "title3", en: "PEAK OF HISTORICAL GLORY ", idn: "PUNCAK SEJARAH YANG MENCAPAI KEJAYAAN" }
+                ],
+                texts: [
+                {
+                        id: "text1",
+                        en: "Fort Oranje was established on May 26, 1607, by Cornelis Matclief de Jonge in Ternate, North Maluku. The construction of this fort aimed to protect the Sultanate of Ternate from Spanish threats after Sultan Said was captured and exiled to Manila in 1606. Previously, this location was the site of a Portuguese fort known as Fort Malayo. The name 'Oranje' was given in 1609 by Francois Wiltlentt, marking the transition of control to the Dutch.",
+                        idn: "Benteng Oranje didirikan pada tanggal 26 Mei 1607 oleh Cornelis Matclief de Jonge di Ternate, Maluku Utara. Pembangunan benteng ini bertujuan untuk melindungi Kesultanan Ternate dari ancaman Spanyol setelah Sultan Said ditangkap dan diasingkan ke Manila pada tahun 1606. Sebelumnya, lokasi ini merupakan bekas benteng Portugis yang dikenal sebagai Benteng Malayo. Nama 'Oranje' diberikan pada tahun 1609 oleh Francois Wiltlentt, yang menandai peralihan kontrol kepada Belanda."
+                    },
+                    {
+                        id: "text2",
+                        en: "Over time, Fort Oranje underwent several renovations and reinforcements. In the 18th century, after the arrival of the Dutch who displaced the Portuguese, the fort was strengthened with cement and additional small buildings for cannons. The fort also served as a monitoring and defense center against pirates threatening the spice trade routes in the waters of Sulawesi.",
+                        idn: "Seiring berjalannya waktu, Benteng Oranje mengalami beberapa renovasi dan penguatan. Pada abad ke-18, setelah kedatangan Belanda yang menggeser posisi Portugis, benteng ini diperkuat dengan semen dan tambahan bangunan kecil untuk meriam. Benteng ini juga berfungsi sebagai pusat pemantauan dan pertahanan terhadap bajak laut yang mengancam jalur perdagangan rempah-rempah di perairan Sulawesi."
+                    },
+                    {
+                        id: "text3",
+                        en: "Fort Oranje reached its peak as one of the main Dutch defensive forts in the Maluku region. During this period, the fort could accommodate up to 130 soldiers and became a symbol of Dutch colonial power. With its strategic position, the fort served not only as a defense but also as an administrative center for the Dutch in the region. Today, Fort Oranje remains a strong witness to Indonesia's colonial history. As an important relic of the past, the fort continues to attract attention from academics and tourists who wish to understand more about colonial history in Indonesia.",
+                        idn: "Benteng Oranje mencapai puncak kejayaannya sebagai salah satu benteng pertahanan utama Belanda di kawasan Maluku. Dalam periode ini, benteng ini mampu menampung hingga 130 serdadu dan menjadi simbol kekuatan kolonial Belanda. Dengan posisi strategisnya, benteng ini tidak hanya berfungsi sebagai pertahanan tetapi juga sebagai pusat administrasi bagi Belanda di wilayah tersebut. Hingga kini, Benteng Oranje tetap berdiri kokoh sebagai saksi bisu dari sejarah kolonial Indonesia. Sebagai salah satu peninggalan penting dari masa lalu, benteng ini terus menarik perhatian baik dari kalangan akademisi maupun wisatawan yang ingin memahami lebih dalam tentang sejarah kolonial di Indonesia."
+                    }
+                ]
+            };
+
+            const isEnglish = document.body.classList.toggle('english');
+
+            // Update header
+            const headerText = document.getElementById(translations.header.id);
+            headerText.innerText = isEnglish ? translations.header.en : translations.header.idn;
+
+            // Update titles and texts
+            translations.titles.forEach(title => {
+                const titleElement = document.getElementById(title.id);
+                titleElement.innerText = isEnglish ? title.en : title.idn;
+            });
+
+            translations.texts.forEach(text => {
+                const textElement = document.getElementById(text.id);
+                textElement.innerHTML = `<p>${isEnglish ? text.en : text.idn}</p>`;
+            });
+        }
+    </script>
+</body>
+</html>
