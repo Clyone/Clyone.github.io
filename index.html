@@ -16,76 +16,71 @@
             padding: 0;
             font-family: 'KOMTIT', sans-serif;
             color: #000;
-            text-align: center;
-            overflow-y: auto;
-            height: 100%;
+            background-color: #f4f4f4;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            text-align: center;
         }
 
         .container {
-            flex-grow: 1;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            flex: 1;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
             background-image: url('Benteeng.jpg');
             background-size: cover;
             background-position: center;
-            padding: 20px;
-            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            margin: 20px;
         }
 
         .header {
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
 
         .header h1 {
             color: #ffffff;
-            text-transform: uppercase;
             font-size: 24px;
+            margin: 0;
         }
 
         .images-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             gap: 20px;
-            padding: 10px 0;
         }
 
         .image-with-text {
             display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: flex-start;
-            gap: 15px;
-            padding: 15px;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
+            padding: 15px;
             width: 100%;
             max-width: 600px;
-            background: rgba(255, 255, 255, 0.8);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            margin: 10px 0;
         }
 
         .title {
-            color: #000;
-            font-size: 18px;
+            color: #333;
+            font-size: 20px;
             font-weight: bold;
-            z-index: 1;
-            width: 60%;
+            margin-bottom: 10px;
         }
 
         .circle-image {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             overflow: hidden;
-            border: 5px solid #fff;
-            background-color: #808080;
+            border: 3px solid #fff;
+            margin-bottom: 10px;
         }
 
         .circle-image img {
@@ -95,34 +90,30 @@
         }
 
         .image-text {
-            flex: 1;
+            text-align: left;
             background: #d3d3d3;
-            padding: 15px;
+            padding: 10px;
             border-radius: 5px; 
+            width: 100%;
             box-sizing: border-box;
-            overflow-y: auto;
             max-height: 150px; /* Batasi tinggi agar tidak terlalu tinggi */
+            overflow-y: auto;
         }
 
         .footer {
             background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
+            padding: 15px;
             color: #ffffff;
             font-size: 16px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .footer p {
-            margin: 5px 0;
+            margin-top: 20px;
         }
 
         .footer .names {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             justify-content: center;
             margin-top: 10px;
             flex-wrap: wrap; /* Agar nama tidak meluber */
@@ -134,11 +125,7 @@
             }
 
             .title {
-                font-size: 16px;
-            }
-
-            .image-text {
-                max-height: 120px; /* Sesuaikan untuk tampilan kecil */
+                font-size: 18px;
             }
         }
     </style>
@@ -155,9 +142,6 @@
                 <div class="title" id="title1">AWAL MULA SEJARAH</div>
                 <div class="circle-image">
                     <img src="Gambar1BentengOrange.jpg" alt="Gambar 1">
-                </div>
-                <div class="image-text" id="text1">
-                    <p>Benteng Oranje didirikan pada tanggal 26 Mei 1607 oleh Cornelis Matclief de Jonge di Ternate, Maluku Utara. Pembangunan benteng ini bertujuan untuk melindungi Kesultanan Ternate dari ancaman Spanyol setelah Sultan Said ditangkap dan diasingkan ke Manila pada tahun 1606. Sebelumnya, lokasi ini merupakan bekas benteng Portugis yang dikenal sebagai Benteng Malayo. Nama "Oranje" diberikan pada tahun 1609 oleh Francois Wiltlentt, yang menandai peralihan kontrol kepada Belanda.</p>
                 </div>
             </div>
 
